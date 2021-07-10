@@ -124,7 +124,7 @@
             this.toolStripSeparator3,
             this.toolStripMenuItem4});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(218, 218);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(218, 190);
             // 
             // toolStripMenuItem1
             // 

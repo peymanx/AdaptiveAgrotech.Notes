@@ -75,7 +75,8 @@ namespace AdaptiveAgrotech.Notes
 
         private void NotePanel_Load(object sender, EventArgs e)
         {
-
+            txtTitle.Focus();
+            txtTitle.SelectAll();
         }
 
         private void toolHalf_Click(object sender, EventArgs e)

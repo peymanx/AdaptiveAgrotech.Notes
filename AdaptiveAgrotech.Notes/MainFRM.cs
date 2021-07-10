@@ -32,6 +32,7 @@ namespace AdaptiveAgrotech.Notes
         private void button3_Click(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
+            MainPanel.Refresh();
         }
     }
 }
