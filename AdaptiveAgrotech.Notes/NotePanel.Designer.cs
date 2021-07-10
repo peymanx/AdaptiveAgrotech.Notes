@@ -58,10 +58,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel.BackColor = System.Drawing.Color.Gold;
-            this.panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel.Controls.Add(this.richBody);
             this.panel.Controls.Add(this.btnMore);
             this.panel.Controls.Add(this.txtTitle);
+            this.panel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.panel.Location = new System.Drawing.Point(11, 11);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(338, 388);
@@ -78,7 +79,7 @@
             this.richBody.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
             this.richBody.Location = new System.Drawing.Point(13, 49);
             this.richBody.Name = "richBody";
-            this.richBody.Size = new System.Drawing.Size(309, 321);
+            this.richBody.Size = new System.Drawing.Size(311, 323);
             this.richBody.TabIndex = 2;
             this.richBody.Text = "Sample Text";
             // 
@@ -86,7 +87,7 @@
             // 
             this.btnMore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMore.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMore.Location = new System.Drawing.Point(279, 8);
+            this.btnMore.Location = new System.Drawing.Point(281, 8);
             this.btnMore.Name = "btnMore";
             this.btnMore.Size = new System.Drawing.Size(45, 30);
             this.btnMore.TabIndex = 1;
@@ -100,10 +101,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTitle.BackColor = System.Drawing.Color.Gold;
             this.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtTitle.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtTitle.Location = new System.Drawing.Point(12, 8);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(265, 30);
+            this.txtTitle.Size = new System.Drawing.Size(267, 30);
             this.txtTitle.TabIndex = 0;
             this.txtTitle.Text = "My Label";
             this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
