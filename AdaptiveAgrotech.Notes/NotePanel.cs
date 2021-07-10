@@ -31,5 +31,24 @@ namespace AdaptiveAgrotech.Notes
             InitializeComponent();
            
         }
+
+        private void btnMore_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip1.Show(btnMore, new Point(0, btnMore.Height)) ;
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            var color = new ColorDialog();
+            if (color.ShowDialog() == DialogResult.OK)
+            {
+                AccentColor = color.Color;
+            }
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            this.Parent.Controls.Remove(this);
+        }
     }
 }
