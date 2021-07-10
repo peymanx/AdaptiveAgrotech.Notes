@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace AdaptiveAgrotech.Notes
 {
-    public partial class Form1 : Form
+    public partial class MainFRM : Form
     {
         private Random rnd = new Random();
 
-        public Form1()
+        public MainFRM()
         {
             InitializeComponent();
         }
@@ -22,6 +22,8 @@ namespace AdaptiveAgrotech.Notes
         private void button1_Click(object sender, EventArgs e)
         {
             var note = new NotePanel();
+            note.Width = note.NormalWidth;
+            note.Height = note.NormalHeight;
             Color randomColor = Color.FromArgb(rnd.Next(100,256), rnd.Next(256), rnd.Next(256));
             note.AccentColor = randomColor;
             MainPanel.Controls.Add(note);
