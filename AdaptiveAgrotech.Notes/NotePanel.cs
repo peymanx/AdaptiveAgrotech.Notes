@@ -36,6 +36,15 @@ namespace AdaptiveAgrotech.Notes
             {
                 panel.BackColor = richBody.BackColor = txtTitle.BackColor = value;
 
+                if (!Utility.IsLight(value))
+                {
+                    panel.ForeColor = richBody.ForeColor = txtTitle.ForeColor  = Color.Black;
+
+                }
+                else
+                    panel.ForeColor = richBody.ForeColor = txtTitle.ForeColor = Color.White;
+
+
                 accentColor = value;
             }
         }

@@ -80,7 +80,7 @@
             this.richBody.Name = "richBody";
             this.richBody.Size = new System.Drawing.Size(309, 321);
             this.richBody.TabIndex = 2;
-            this.richBody.Text = "";
+            this.richBody.Text = "Sample Text";
             // 
             // btnMore
             // 
@@ -152,7 +152,7 @@
             // toolHalf
             // 
             this.toolHalf.Name = "toolHalf";
-            this.toolHalf.Size = new System.Drawing.Size(216, 26);
+            this.toolHalf.Size = new System.Drawing.Size(134, 26);
             this.toolHalf.Text = "Half";
             this.toolHalf.Click += new System.EventHandler(this.toolHalf_Click);
             // 
@@ -161,21 +161,21 @@
             this.toolNormal.Checked = true;
             this.toolNormal.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toolNormal.Name = "toolNormal";
-            this.toolNormal.Size = new System.Drawing.Size(216, 26);
+            this.toolNormal.Size = new System.Drawing.Size(134, 26);
             this.toolNormal.Text = "Normal";
             this.toolNormal.Click += new System.EventHandler(this.normalToolStripMenuItem_Click);
             // 
             // toolDouble
             // 
             this.toolDouble.Name = "toolDouble";
-            this.toolDouble.Size = new System.Drawing.Size(216, 26);
+            this.toolDouble.Size = new System.Drawing.Size(134, 26);
             this.toolDouble.Text = "Double";
             this.toolDouble.Click += new System.EventHandler(this.toolDouble_Click);
             // 
             // toolTall
             // 
             this.toolTall.Name = "toolTall";
-            this.toolTall.Size = new System.Drawing.Size(216, 26);
+            this.toolTall.Size = new System.Drawing.Size(134, 26);
             this.toolTall.Text = "Tall";
             this.toolTall.Visible = false;
             this.toolTall.Click += new System.EventHandler(this.toolTall_Click);
@@ -225,6 +225,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "NotePanel";
             this.Size = new System.Drawing.Size(350, 400);
             this.Load += new System.EventHandler(this.NotePanel_Load);

@@ -24,7 +24,7 @@ namespace AdaptiveAgrotech.Notes
             var note = new NotePanel();
             note.Width = note.NormalWidth;
             note.Height = note.NormalHeight;
-            Color randomColor = Color.FromArgb(rnd.Next(100,256), rnd.Next(256), rnd.Next(256));
+            Color randomColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
             note.AccentColor = randomColor;
             MainPanel.Controls.Add(note);
         }
