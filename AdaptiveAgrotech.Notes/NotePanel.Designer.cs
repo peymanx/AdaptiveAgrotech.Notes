@@ -80,8 +80,7 @@
             this.richBody.Name = "richBody";
             this.richBody.Size = new System.Drawing.Size(309, 321);
             this.richBody.TabIndex = 2;
-            this.richBody.Text = "Project 01: xxxxxxxxxxxxxxxxxxx\nProject 02: xxxxxxxxxxxxxxxxxxx\nProject 03: xxxxx" +
-    "xxxxxxxxxxxxxx\n";
+            this.richBody.Text = "";
             // 
             // btnMore
             // 
@@ -106,7 +105,7 @@
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(265, 30);
             this.txtTitle.TabIndex = 0;
-            this.txtTitle.Text = "Label01";
+            this.txtTitle.Text = "My Label";
             this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // contextMenuStrip1
