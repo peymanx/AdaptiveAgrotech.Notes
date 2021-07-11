@@ -124,13 +124,14 @@
             this.toolStripSeparator3,
             this.toolStripMenuItem4});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(218, 190);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(218, 218);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(217, 24);
             this.toolStripMenuItem1.Text = "Open in new window";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem6
             // 

@@ -71,7 +71,8 @@ namespace AdaptiveAgrotech.Notes
 
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            this.Parent.Controls.Remove(this);
+            if (MessageBox.Show("This action can't be undone,\nDo you want to remove the note?", "Permanent Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Parent.Controls.Remove(this);
         }
 
         private void normalToolStripMenuItem_Click(object sender, EventArgs e)
@@ -115,7 +116,8 @@ namespace AdaptiveAgrotech.Notes
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            var save = new SaveFileDialog(){
+            var save = new SaveFileDialog()
+            {
                 Filter = "Text File|*.txt",
                 FileName = txtTitle.Text
             };
@@ -138,6 +140,11 @@ namespace AdaptiveAgrotech.Notes
             Clipboard.SetText(content);
 
 
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new EditorFRM(richBody).Show();
         }
     }
 }
