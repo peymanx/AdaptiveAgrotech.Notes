@@ -190,7 +190,8 @@
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(217, 24);
-            this.toolStripMenuItem2.Text = "Export as text...";
+            this.toolStripMenuItem2.Text = "Export as Text file...";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -208,6 +209,7 @@
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Size = new System.Drawing.Size(217, 24);
             this.toolStripMenuItem5.Text = "Copy to Cipboard";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripSeparator3
             // 
@@ -240,9 +242,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.RichTextBox richBody;
         private System.Windows.Forms.Button btnMore;
-        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
@@ -258,5 +258,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolNormal;
         private System.Windows.Forms.ToolStripMenuItem toolDouble;
         private System.Windows.Forms.ToolStripMenuItem toolTall;
+        public System.Windows.Forms.RichTextBox richBody;
+        public System.Windows.Forms.TextBox txtTitle;
     }
 }

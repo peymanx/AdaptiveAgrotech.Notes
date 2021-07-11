@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace AdaptiveAgrotech.Notes
 {
@@ -38,7 +39,7 @@ namespace AdaptiveAgrotech.Notes
 
                 if (!Utility.IsLight(value))
                 {
-                    panel.ForeColor = richBody.ForeColor = txtTitle.ForeColor  = Color.Black;
+                    panel.ForeColor = richBody.ForeColor = txtTitle.ForeColor = Color.Black;
 
                 }
                 else
@@ -110,6 +111,33 @@ namespace AdaptiveAgrotech.Notes
             this.Height = NormalHeight * 2;
             toolNormal.Checked = toolDouble.Checked = toolHalf.Checked = toolTall.Checked = false;
             toolTall.Checked = true;
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            var save = new SaveFileDialog(){
+                Filter = "Text File|*.txt",
+                FileName = txtTitle.Text
+            };
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                var content = txtTitle.Text + Environment.NewLine + "------------------------------" + Environment.NewLine +
+                richBody.Text;
+
+                File.WriteAllText(save.FileName, content);
+                System.Diagnostics.Process.Start("notepad.exe", save.FileName);
+
+
+            }
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            var content = txtTitle.Text + Environment.NewLine + "------------------------------" + Environment.NewLine +
+               richBody.Text;
+            Clipboard.SetText(content);
+
+
         }
     }
 }
