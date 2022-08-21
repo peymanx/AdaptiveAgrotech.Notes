@@ -144,7 +144,7 @@ namespace AdaptiveAgrotech.Notes
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            new EditorFRM(richBody).Show();
+            //new EditorFRM(richBody).Show();
         }
     }
 }
